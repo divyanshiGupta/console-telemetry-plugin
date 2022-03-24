@@ -1,20 +1,10 @@
 [
   {
-    "type": "console.page/route",
+    "type": "console.telemetry/listener",
     "properties": {
-      "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
-    }
-  },
-  {
-    "type": "console.navigation/href",
-    "properties": {
-      "id": "example",
-      "name": "Plugin Example",
-      "href": "/example",
-      "perspective": "admin",
-      "section": "home"
+      "listener": {
+        "$codeRef": "telemetry.eventListener"
+      }
     }
   }
 ]

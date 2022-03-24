@@ -1,8 +1,8 @@
 {
-  "name": "console-plugin-template",
+  "name": "console-telemetry-plugin",
   "version": "0.0.1",
   "private": true,
-  "repository": "git@github.com:spadgett/console-plugin-template.git",
+  "repository": "git@github.com:divyanshiGupta/console-telemetry-plugin.git",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "yarn clean && NODE_ENV=production yarn ts-node node_modules/.bin/webpack",
@@ -45,12 +45,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "consolePlugin": {
-    "name": "console-plugin-template",
-    "version": "0.0.1",
-    "displayName": "OpenShift Console Plugin Template",
-    "description": "Template project for OpenShift console plugins. Edit package.json to change this message and the plugin name.",
+    "name": "console-telemetry-plugin",
+    "version": "1.0.0",
+    "displayName": "Telemetry Plugin",
+    "description": "An OpenShift Console plugin for capturing events in segment.",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "telemetry": "./telemetry"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
